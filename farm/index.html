@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Deck</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1.1em;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  padding: 10px 0 5px;
+}
+
+.product-card p {
+  color: #777;
+}
+
+.product-card span {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #000;
+  display: block;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+@media (max-width: 420px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head><body>
+  <header>
+    <h1>Ninja Mode Clothing</h1>
+    <p>Bold • Comfortable • Street Smart</p>
+  </header>  <section class="hero">
+    <h2>Level Up Your Style</h2>
+    <p>Explore our unique urban wear for men. Quality fabrics, dope prints, and the confidence to match. Made for kings who move in silence — like ninjas.</p>
+  </section>  <section class="products">
+
+    <div class="product-card">
+      <img src="ninja (1).jpg" alt="Ninja Mode Outfit Front View">
+      <h3>Ninja Mode Fit - Front</h3>
+      <p>Black graphic tee + blue joggers with side stripes</p>
+      <span>Ksh 2,800</span>
+      <button class="btn" onclick="orderNow('Ninja Mode Fit - Front')">Order Now</button>
+    </div><div class="product-card">
+
+      <div class="product-card">
+      <img src="ninja (3).jpg" alt="Ladies outfit dress-front view">
+      <h3>Long Dress</h3>
+      <p>White graphic tee dress with shadey stripes</p>
+      <span>Ksh 5,800</span>
+      <button class="btn" onclick="orderNow('Ninja Mode Fit - Front')">Order Now</button>
+    </div><div class="product-card">
+      
+       <div class="product-card">
+      <img src="ninja (4).jpg" alt="Ladies outfit dress-front view">
+      <h3>Long Dress</h3>
+      <p>White graphic tee dress with shadey stripes</p>
+      <span>Ksh 4,800</span>
+      <button class="btn" onclick="orderNow('Ninja Mode Fit - Front')">Order Now</button>
+    </div><div class="product-card">
+
+       <div class="product-card">
+      <img src="ninja (5).jpg" alt="Ladies outfit dress-front view">
+      <h3>Long Dress</h3>
+      <p>White graphic tee dress with shadey stripes</p>
+      <span>Ksh 1,800</span>
+      <button class="btn" onclick="orderNow('Ninja Mode Fit - Front')">Order Now</button>
+    </div><div class="product-card">
+
+  <img src="ninja (2).jpg" alt="Ninja Mode Outfit Side View">
+  <h3>Ninja Mode Fit - Side</h3>
+  <p>Fresh urban vibes from every angle</p>
+  <span>Ksh 2,800</span>
+  <button class="btn" onclick="orderNow('Ninja Mode Fit - Side')">Order Now</button>
+</div>
+
+  </section>  <footer>
+    <p>&copy; 2025 Ninja Mode Clothing. All rights reserved. | Follow us: IG | FB | X</p>
+  </footer>  <script>
+    function orderNow(productName) {
+      const userName = prompt(You are ordering: ${productName}\n\nEnter your name to continue:);
+      if (userName) {
+        alert(Thanks ${userName}! We’ve received your order for: ${productName}. Our team will contact you shortly.);
+      } else {
+        alert("Order cancelled. Please enter your name to proceed next time.");
+      }
+    }
+  </script></body></html>
